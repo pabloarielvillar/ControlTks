@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="es">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECOSUR CALCULOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <script src="https://kit.fontawesome.com/29ab4e14f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="imc" id="parteimc">
+    <h1>Calculo de llenado de Tks de tierra</h1><br>
+  
+    <br>
+
+    <fieldset>
+        <legend>CALCULO DE LLENADO POR MINUTO</legend>
+        <br>
+        
+        <br>
+
+        <p>Recuerde que cuanto mas amplio sea el tiempo de control mas justo sera el resultado</p>
+        <br><br>
+        <table>
+            <tr>
+                <td><label for="medidauno">Medida Vacio anterior</label></td>
+                <td><input type="number" style="width: 80px;"  id="medidauno"></td>
+            </tr>
+
+            <tr>
+                <td><label for="lapso">Minutos transcurridos</label></td>
+                <td><input type="number" style="width: 80px;" id="lapso"></td>
+            </tr>
+
+            <tr>
+                <td><label for="medidados">Medida Actual</label></td>
+                <td><input type="number" style="width: 80px;"  id="medidados"></td>
+            </tr>
+
+            <tr>
+                <td><label for="medidadeseada">Medida de vacio final</label></td>
+                <td><input type="number" style="width: 80px;"  id="medidadeseada"></td>
+            </tr>
+            <br>
+        </table>
+
+        <br>
+        
+    
+
+        
+        <script>
+
+            function calcularimc(){
+                var a = document.getElementById('medidauno').value;
+                var b = document.getElementById('medidados').value;
+                var c = document.getElementById('lapso').value;
+                var d = document.getElementById('medidadeseada').value;
+
+                var sube = (a-b);
+                var restasubir = (b-d);
+
+                var imc = (restasubir/sube)*c;
+                var sinDecimales = Math.trunc(imc);
+
+                document.getElementById('resultado').value= sinDecimales;
+                console.log (sinDecimales);
+
+            }  
+
+        </script>
+
+        <button onclick="calcularimc()">CALCULAR</button>
+        <br>
+        <input type="text" id="resultado"><br>
+        <br>
+    </fieldset>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+</body>
+</html>
