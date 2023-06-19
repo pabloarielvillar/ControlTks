@@ -13,45 +13,36 @@
 <body>
 
 <div class="imc" id="parteimc">
-    <h1>Calculo de llenado de Tks de tierra</h1><br>
-  
+
     <br>
 
     <fieldset>
         <legend>CALCULO DE LLENADO POR MINUTO</legend>
         <br>
         
-        <br>
-
-        <p>Recuerde que cuanto mas amplio sea el tiempo de control mas justo sera el resultado</p>
-        <br><br>
         <table>
             <tr>
-                <td><label for="medidauno">Medida Vacio anterior</label></td>
+                <td><label for="medidauno">Vacio anterior</label></td>
                 <td><input type="number" style="width: 80px;"  id="medidauno"></td>
             </tr>
 
             <tr>
-                <td><label for="lapso">Minutos transcurridos</label></td>
+                <td><label for="lapso">Lapso minutos</label></td>
                 <td><input type="number" style="width: 80px;" id="lapso"></td>
             </tr>
 
             <tr>
-                <td><label for="medidados">Medida Actual</label></td>
+                <td><label for="medidados">Vacio actual</label></td>
                 <td><input type="number" style="width: 80px;"  id="medidados"></td>
             </tr>
 
             <tr>
                 <td><label for="medidadeseada">Medida de vacio final</label></td>
-                <td><input type="number" style="width: 80px;"  id="medidadeseada"></td>
+                <td><input type="number" value="950" style="width: 80px;"  id="medidadeseada"></td>
             </tr>
             <br>
         </table>
-
         <br>
-        
-    
-
         
         <script>
 
@@ -73,27 +64,15 @@
             }  
 
         </script>
-
-        <button onclick="calcularimc()">CALCULAR</button>
+        <br>
+        
+        <button onclick="calcularimc()">CALCULAR</button><br>
         <br>
         <input type="text" id="resultado"><br>
         <br>
+
     </fieldset>
 </div>
-<br>
-<br>
-
-
-
-  
-   
-
-<br>
-<br>
-
-</div>
-
-   
 
 </body>
 </html>
