@@ -20,7 +20,7 @@ th{
   border: 3px solid rgb(184, 74, 11);
   background-color: #dcc425;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 10em;
+  width: 40px;
   text-align: center;
 }
 
@@ -30,8 +30,8 @@ td {
   width:10em;
   font-size: 18px;
   text-align: center;
-  height: 50px;
-  padding: 15px;
+  height: 40px;
+  padding: 5px;
 }
 
 input {
@@ -71,10 +71,11 @@ body {
   width: 80%;
   padding: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 fieldset {
-  width: 70%;
+  width: 60%;
   height: 100%;
   font-size: 18px;
 }
