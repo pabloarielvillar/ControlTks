@@ -12,6 +12,8 @@
 
 <body>
 
+<div id="contenedor">
+
     <br>
 
     <fieldset>
@@ -61,13 +63,21 @@
 
                 var sube = (a-b);
                 var restasubir = (b-d);
+
                 var imc = (restasubir/sube)*c;
+                console.log (imc);
+
                 var enhoras = imc/60;
+                console.log (enhoras);
+
                 var enhorassinDecimales = Math.trunc(enhoras);
+    
                 var enminutos = imc-enhorassinDecimales*60;
+                console.log (enminutos);
+
                 var enminutossinDecimales= Math.trunc(enminutos);
-                
-                var resultado = "Finaliza en ";             
+             
+                var resultado = "Finaliza en ";
                 resultado = resultado.concat(enhorassinDecimales);
                 resultado = resultado.concat(" horas y ");
                 resultado = resultado.concat(enminutossinDecimales);
@@ -81,7 +91,7 @@
         </script>
 
     </fieldset>
-
+</div>
 </body>
 </html>
 
